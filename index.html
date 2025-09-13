@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Зоопарк</title>
+</head>
+<body>
+    
+    <header>
+        <div id="header">
+            <h1>Добро пожаловать в зоопарк </h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#animals">Животные</a></li>
+                    <li><a href="#prices">Цены</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                    <li><a href="#visit-form">Записаться на экскурсию</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        
+        <section id="about">
+            <div class="section-content">
+                <h2>О нашем зоопарке</h2>
+                <p>Зоопарк <strong>"Дикий мир"</strong> был основан в <em>1995 году</em> с целью сохранения и защиты диких животных.</p>
+                <p>Сегодня у нас проживает более <mark>200 видов животных</mark> со всего мира!</p>
+                
+                <h3>Наши достижения:</h3>
+                <ul>
+                    <li>Участие в международных программах по сохранению видов</li>
+                    <li>Успешное разведение редких животных</li>
+                    <li>Образовательные программы для детей и взрослых</li>
+                </ul>
+
+                <img src="image030.jpg" alt="Общий вид зоопарка" width="600">
+            </div>
+        </section>
+
+        
+        <section id="animals">
+            <div class="section-content">
+                <h2>Наши животные</h2>
+                
+                <h3>Хищники</h3>
+                <div class="animal-category">
+                    <img src="istockphoto-94973565-612x612.jpg" alt="Бегемот" width="200">
+                    <img src="i.webp" alt="Тигр" width="200">
+                    <img src="68ac902e1f5e285f2f7a66a9d311e1f0.jpg" alt="Медведь" width="200">
+                </div>
+
+                <h3>Травоядные</h3>
+                <div class="animal-category">
+                    <img src="1c00316bbc622b0eed7d16846e9bf61d.jpg" alt="Слон" width="200">
+                    <img src="7adbf2686345625a6762157c4b4586cc.jpg" alt="Жираф" width="200">
+                    <img src="114fec19ad7e9881162958ae2488b3e3.jpg" alt="Зебра" width="200">
+                </div>
+
+                <h3>Птицы</h3>
+                <div class="animal-category">
+                    <img src="ingo-doerrie-tqwamoshbem-unsplash-1200x630.jpg" alt="Орел" width="200">
+                    <img src="fzeFbyr4mji-TIBduxsKmw.jpg" alt="Попугай" width="200">
+                    <img src="f1076535e81ae1e4a0a0ef0351274e78.jpg" alt="Фламинго" width="200">
+                </div>
+
+                
+                <div class="video-section">
+                    <h3>Посмотрите на наших животных в действии!</h3>
+                    <video width="600" controls>
+                        <source src="X2Twitter.com_vVGCA_JC7zgtYZA8_1024p.mp4" type="video/mp4">
+                        Ваш браузер не поддерживает видео элемент.
+                    </video>
+                </div>
+
+                
+                <div class="audio-section">
+                    <h3>Послушайте голоса животных</h3>
+                    <audio controls>
+                        <source src="tigr.mp3" type="audio/mp3">
+                        Ваш браузер не поддерживает аудио элемент.
+                    </audio>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="prices">
+            <div class="section-content">
+                <h2>Цены на билеты</h2>
+                
+                <table style="border-radius: 1;">
+                    <thead>
+                        <tr>
+                            <th>Категория</th>
+                            <th>Будние дни</th>
+                            <th>Выходные</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Взрослый</td>
+                            <td>500 руб.</td>
+                            <td>700 руб.</td>
+                        </tr>
+                        <tr>
+                            <td>Детский (3-12 лет)</td>
+                            <td>300 руб.</td>
+                            <td>400 руб.</td>
+                        </tr>
+                        <tr>
+                            <td>Студенты/Пенсионеры</td>
+                            <td>400 руб.</td>
+                            <td>500 руб.</td>
+                        </tr>
+                        <tr>
+                            <td>Дети до 3 лет</td>
+                            <td colspan="2">Бесплатно</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Экскурсионные программы:</h3>
+                <ol>
+                    <li>Обзорная экскурсия - 1000 руб./группа</li>
+                    <li>Тематическая экскурсия - 1500 руб./группа</li>
+                    <li>Индивидуальная экскурсия - 2500 руб.</li>
+                </ol>
+            </div>
+        </section>
+
+        
+        <section id="visit-form">
+            <div class="section-content">
+                <h2>Записаться на экскурсию</h2>
+                
+                <form action="/submit-visit" method="post">
+                    <div class="form-group">
+                        <label for="name">ФИО:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Телефон:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date">Дата посещения:</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="time">Время:</label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="people">Количество человек:</label>
+                        <input type="number" id="people" name="people" min="1" max="20" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="excursion">Тип экскурсии:</label>
+                        <select id="excursion" name="excursion">
+                            <option value="general">Обзорная</option>
+                            <option value="thematic">Тематическая</option>
+                            <option value="individual">Индивидуальная</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comments">Комментарии:</label>
+                        <textarea id="comments" name="comments" rows="4"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="submit" value="Записаться">
+                        <input type="reset" value="Очистить">
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        
+        <section id="contacts">
+            <div class="section-content">
+                <h2>Контакты</h2>
+                
+                <address>
+                    <p><strong>Адрес:</strong> г. Москва, ул. Зоологическая, д. 123</p>
+                    <p><strong>Телефон:</strong> <a href="tel:+74951234567">+7 (495) 123-45-67</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:info@wildzoo.ru">info@wildzoo.ru</a></p>
+                </address>
+
+                <h3>Часы работы:</h3>
+                <ul>
+                    <li>Понедельник-Пятница: 9:00-18:00</li>
+                    <li>Суббота-Воскресенье: 9:00-20:00</li>
+                    <li>Касса закрывается за час до закрытия зоопарка</li>
+                </ul>
+
+                <div class="map">
+                    <h3>Как добраться:</h3>
+                    <img src="41741915.jpg" alt="Карта проезда к зоопарку" width="400">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+    <footer>
+        <div id="footer">
+            <p>&copy; 2024 Зоопарк "Дикий мир". Все права защищены.</p>
+            <p>Следите за нами в социальных сетях:
+                <a href="#">ВКонтакте</a> |
+                <a href="#">Instagram</a> |
+                <a href="#">Facebook</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
